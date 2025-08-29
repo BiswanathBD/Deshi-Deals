@@ -32,9 +32,9 @@
       }
     </style>
   </head>
-  <body class="max-w-[1960px] mx-auto work-sans">
+  <body class="max-w-[1960px] mx-auto work-sans relative">
     <nav
-      class="px-3 py-2 flex justify-between items-center shadow-md shadow-pink-50 sticky top-0 bg-white z-50"
+      class="px-3 py-2 flex justify-between items-center shadow-md shadow-pink-50 sticky top-0 bg-white z-100"
     >
       <div class="flex items-center gap-2">
         <img class="w-10" src="./assets/logo.png" alt="" />
@@ -122,7 +122,7 @@
       />
     </header>
 
-    <section class="grid md:grid-cols-12 px-4 md:px-10 bg-gray-100 pt-32">
+    <section class="grid md:grid-cols-12 gap-4 px-4 md:px-10 bg-gray-100 pt-32">
       <div class="col-span-8">
         <h2 class="text-4xl font-bold mb-8">KitchenWare</h2>
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
@@ -169,11 +169,103 @@
             <p class="products-price">49.00 TK</p>
           </div>
         </div>
+
+        <h2 class="text-4xl font-bold mb-8">Sportswear</h2>
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+          <div class="product-card">
+            <div class="image">
+              <img src="./assets/sports-1.png" alt="" />
+            </div>
+            <p class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p class="product-title">Sports Back Cap</p>
+            <p class="products-price">49.00 TK</p>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="./assets/sports-2.png" alt="" />
+            </div>
+            <p class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p class="product-title">Full Jersey Set</p>
+            <p class="products-price">69.00 TK</p>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="./assets/sports-3.png" alt="" />
+            </div>
+            <p class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p class="product-title">Sports Cates</p>
+            <p class="products-price">159.00 TK</p>
+          </div>
+        </div>
+
+        <h2 class="text-4xl font-bold mb-8">Furniture</h2>
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+          <div class="product-card">
+            <div class="image">
+              <img src="./assets/furniture-1.png" alt="" />
+            </div>
+            <p class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p class="product-title">Single Relax Chair</p>
+            <p class="products-price">185.00 TK</p>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="./assets/furniture-2.png" alt="" />
+            </div>
+            <p class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <p class="product-title">Children play</p>
+            <p class="products-price">299.00 TK</p>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="./assets/furniture-3.png" alt="" />
+            </div>
+            <p class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <p class="product-title">Flexible Sofa</p>
+            <p class="products-price">339.00 TK</p>
+          </div>
+        </div>
       </div>
 
       <div
         id="cart-menu"
-        class="bg-gray-100 md:col-span-4 md:ml-24 absolute z-50 left-0 md:relative md:block w-full md:w-auto shadow-xl md:shadow-none rounded-b-2xl md:rounded-none hidden"
+        class="bg-gray-100 md:col-span-4 lg:ml-20 absolute md:static left-0 md:block w-full md:w-auto shadow-xl md:shadow-none rounded-b-2xl md:rounded-none hidden"
       >
         <div class="bg-white p-6 rounded-md md:mt-[72px] mb-8">
           <p class="text-xl font-semibold mb-2">Have coupon?</p>
@@ -185,7 +277,7 @@
               id="coupon"
               placeholder="Coupon Code"
             />
-            <button class="text-white bg-pink-500 px-6 py-2 rounded-r-md">
+            <button class="text-white bg-pink-500 py-2 rounded-r-md">
               Apply
             </button>
           </div>
