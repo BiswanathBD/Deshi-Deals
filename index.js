@@ -18,19 +18,14 @@ Array.from(productCards).forEach((productCard) => {
     "text-center",
     "rounded-xl"
   );
-
-  productCard.querySelector("img").classList.add("w-[50%]");
-
+  productCard.querySelector("img").classList.add("md:h-full", "mx-auto", "p-6");
   productCard.querySelector(".star").classList.add("text-yellow-500");
-
   productCard
     .querySelector(".image")
-    .classList.add("bg-gray-100", "mb-8", "rounded-xl");
-
+    .classList.add("bg-gray-100", "mb-8", "rounded-md");
   productCard
     .querySelector(".product-title")
     .classList.add("text-xl", "font-semibold");
-
   productCard.querySelector(".products-price").classList.add("text-gray-500");
 });
 
