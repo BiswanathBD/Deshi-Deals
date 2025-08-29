@@ -7,7 +7,6 @@ function getByClass(className) {
 }
 
 const productCards = getByClass("product-card");
-console.log(productCards);
 
 Array.from(productCards).forEach((productCard) => {
   productCard.classList.add(
@@ -16,13 +15,13 @@ Array.from(productCards).forEach((productCard) => {
     "flex",
     "flex-col",
     "text-center",
-    "rounded-xl"
+    "rounded-md"
   );
   productCard.querySelector("img").classList.add("md:h-full", "mx-auto", "p-6");
   productCard.querySelector(".star").classList.add("text-yellow-500");
   productCard
     .querySelector(".image")
-    .classList.add("bg-gray-100", "mb-8", "rounded-md");
+    .classList.add("bg-gray-100", "mb-8", "rounded-sm");
   productCard
     .querySelector(".product-title")
     .classList.add("text-xl", "font-semibold");
@@ -30,11 +29,24 @@ Array.from(productCards).forEach((productCard) => {
 });
 
 // mobile menu function
-const menuBtn = getById("menu-btn");
-menuBtn.addEventListener("click", function () {
-  const mobileMenu = getById("mobile-menu");
-  mobileMenu.classList.toggle("opacity-0");
-  mobileMenu.classList.toggle("opacity-100");
-  mobileMenu.classList.toggle("top-10");
+const menuBtn = document.getElementById("menu-btn");
+const cartBtn = document.getElementById("cart-btn");
+
+const mobileMenu = document.getElementById("mobile-menu");
+const cartMenu = document.getElementById("cart-menu");
+
+menuBtn.addEventListener("click", () => {
+  cartMenu.classList.add("hidden");
+  cartMenu.classList.remove("top-16");
+
+  mobileMenu.classList.toggle("hidden");
   mobileMenu.classList.toggle("top-16");
+});
+
+cartBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
+  mobileMenu.classList.remove("top-16");
+
+  cartMenu.classList.toggle("hidden");
+  cartMenu.classList.toggle("top-16");
 });
