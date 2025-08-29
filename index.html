@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Deshi Deals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./tailwind.config.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .work-sans {
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="max-w[1960px] mx-auto work-sans relative">
+    <nav
+      class="px-5 py-2 flex justify-between items-center shadow-xl shadow-pink-50 sticky top-0 bg-white z-50"
+    >
+      <div class="flex items-center gap-2">
+        <img class="w-10" src="./assets/logo.png" alt="" />
+        <div>
+          <h3 class="text-2xl text-pink-600">
+            Deshi <span class="font-bold">Deals</span>
+          </h3>
+          <p class="text-[10px] text-gray-400">Cheap Price , Best Quality</p>
+        </div>
+      </div>
+
+      <ul class="flex items-center text-pink-500">
+        <li
+          class="px-4 py-2 hover:bg-gradient-to-b hover:shadow rounded-full from-gray-100 hover:text-pink-600 hover:font-medium transition-all"
+        >
+          Home
+        </li>
+        <li
+          class="px-4 py-2 hover:bg-gradient-to-b hover:shadow rounded-full from-gray-100 hover:text-pink-600 hover:font-medium transition-all"
+        >
+          Contact Us
+        </li>
+        <li
+          class="px-4 py-2 hover:bg-gradient-to-b hover:shadow rounded-full from-gray-100 hover:text-pink-600 hover:font-medium transition-all"
+        >
+          Deals
+        </li>
+        <li
+          class="px-4 py-2 hover:bg-gradient-to-b hover:shadow rounded-full from-gray-100 hover:text-pink-600 hover:font-medium transition-all"
+        >
+          About Us
+        </li>
+        <li
+          class="border border-pink-500 font-medium px-5 py-2 rounded-full ml-12 hover:bg-pink-500 hover:text-white hover:font-semibold transition-all"
+        >
+          Login
+        </li>
+      </ul>
+    </nav>
+
+    <header
+      class="flex flex-col gap-5 justify-center items-center bg-gradient-to-t from-pink-100 mb-28"
+    >
+      <h1 class="text-4xl text-center mt-16 font-bold">
+        Purchase TK 200 or above & get <br />
+        <span class="text-pink-500 text-5xl">20% off</span>
+      </h1>
+      <div class="flex gap-8 text-gray-800 justify-center items-center">
+        <p>Use Promo Code</p>
+        <p class="bg-pink-500 text-white px-8 py-1 rounded-lg font-medium">
+          SELL200
+        </p>
+      </div>
+      <img
+        class="mx-10 md:max-w-[700px] -mb-20"
+        src="./assets/hero-bg.png"
+        alt=""
+      />
+    </header>
+  </body>
+</html>
