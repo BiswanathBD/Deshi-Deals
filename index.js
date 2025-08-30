@@ -50,3 +50,4 @@ cartBtn.addEventListener("click", () => {
   cartMenu.classList.toggle("hidden");
   cartMenu.classList.toggle("top-16");
 });
+
