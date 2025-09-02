@@ -140,6 +140,24 @@ productBox.addEventListener("click", function (e) {
       getById("discount").childNodes[1].childNodes[1].innerText = discount;
       const totalPrice = Number(cartPrice) - Number(discount);
       getById("total-price").childNodes[1].childNodes[1].innerText = totalPrice;
+
+      const cartItem = document.createElement("div");
+      cartItem.innerHTML = `<div
+              id="added-item"
+              class="flex justify-between items-center bg-gray-100 p-4 rounded-md"
+            >
+              <img
+                id="product-image"
+                class="h-12"
+                src="${productImg}"
+                alt=""
+              />
+              <div class="text-right">
+                <p class="font-semibold">${productTitle}</p>
+                <p id="product-price" class="text-gray-500">${productPrice} TK</p>
+              </div>
+            </div>`;
+      cartItemParent.appendChild(cartItem);
     }
   }
 });
