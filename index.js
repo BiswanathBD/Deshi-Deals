@@ -171,5 +171,8 @@ PurchaseBtn.addEventListener("click", function () {
       confirmButtonText: "Awesome!",
     });
     cartItemParent.innerHTML = "";
+    getById("card-price").childNodes[1].childNodes[1].innerText = "0.00";
+    getById("discount").childNodes[1].childNodes[1].innerText = "0.00";
+    getById("total-price").childNodes[1].childNodes[1].innerText = "0.00";
   }
 });
