@@ -14,6 +14,7 @@ Array.from(productCards).forEach((productCard) => {
     "p-4",
     "flex",
     "flex-col",
+    "justify-between",
     "text-center",
     "rounded-md"
   );

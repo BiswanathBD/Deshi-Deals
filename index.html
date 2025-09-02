@@ -34,7 +34,7 @@
   </head>
   <body class="max-w-[1960px] mx-auto work-sans relative">
     <nav
-      class="container mx-auto px-6 md:px-20 py-2 flex justify-between items-center shadow-md shadow-pink-50 sticky top-0 bg-white z-100"
+      class="px-6 md:px-20 py-2 flex justify-between items-center shadow-md shadow-pink-50 sticky top-0 bg-white z-100"
     >
       <div class="flex items-center gap-2">
         <img class="w-10" src="./assets/logo.png" alt="" />
@@ -73,7 +73,7 @@
       </ul>
 
       <!-- large display menu section -->
-      <ul class="md:flex items-center text-pink-500 hidden">
+      <ul class="md:flex gap-2.5 items-center text-pink-500 hidden">
         <li
           class="px-4 py-2 hover:bg-gradient-to-b hover:shadow rounded-full from-gray-100 hover:text-pink-600 hover:font-medium transition-all"
         >
@@ -139,6 +139,7 @@
             </p>
             <p class="product-title">K. Accessories</p>
             <p class="products-price">39.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
           <div class="product-card">
             <div class="image">
@@ -153,6 +154,7 @@
             </p>
             <p class="product-title">K. Accessories</p>
             <p class="products-price">35.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
           <div class="product-card">
             <div class="image">
@@ -167,6 +169,7 @@
             </p>
             <p class="product-title">Home Cooker</p>
             <p class="products-price">49.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
         </div>
 
@@ -185,6 +188,7 @@
             </p>
             <p class="product-title">Sports Back Cap</p>
             <p class="products-price">49.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
           <div class="product-card">
             <div class="image">
@@ -199,6 +203,7 @@
             </p>
             <p class="product-title">Full Jersey Set</p>
             <p class="products-price">69.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
           <div class="product-card">
             <div class="image">
@@ -213,6 +218,7 @@
             </p>
             <p class="product-title">Sports Cates</p>
             <p class="products-price">159.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
         </div>
 
@@ -231,6 +237,7 @@
             </p>
             <p class="product-title">Single Relax Chair</p>
             <p class="products-price">185.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
           <div class="product-card">
             <div class="image">
@@ -245,6 +252,7 @@
             </p>
             <p class="product-title">Children play</p>
             <p class="products-price">299.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
           <div class="product-card">
             <div class="image">
@@ -259,6 +267,7 @@
             </p>
             <p class="product-title">Flexible Sofa</p>
             <p class="products-price">339.00 TK</p>
+            <button class="bg-pink-500 text-white px-4 py-2 font-semibold mt-4 rounded-md">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -285,21 +294,48 @@
 
         <div class="bg-white p-4 rounded-md">
           <div id="cart-parent" class="grid gap-4">
-          <div id="added-item" class="flex justify-between items-center bg-gray-100 p-4 rounded-md">
-              <img id="product-image" class="h-12" src="./assets/kitchen-1.png" alt="">
-            <div>
-              <p class="font-semibold">K. Accessories</p>
-              <p id="product-price" class="text-gray-500">39.00 TK</p>
+            <div
+              id="added-item"
+              class="flex justify-between items-center bg-gray-100 p-4 rounded-md"
+            >
+              <img
+                id="product-image"
+                class="h-12"
+                src="./assets/kitchen-1.png"
+                alt=""
+              />
+              <div>
+                <p class="font-semibold">K. Accessories</p>
+                <p id="product-price" class="text-gray-500">39.00 TK</p>
+              </div>
             </div>
-          </div>
           </div>
 
           <div class="p-4 my-8 border-b border-t border-1 border-pink-100">
-            <p id="total-price" class="font-semibold">Total Price: <span class="font-normal text-gray-500"> <span>39.00</span> TK</span></p>
-            <p id="discount" class="font-semibold">Discount: <span class="font-normal text-gray-500"> <span>9.00</span> TK</span></p>
-            <p id="total" class="font-semibold">Total: <span class="font-normal text-gray-500"> <span>30.00</span> TK</span></p>
+            <p id="total-price" class="font-semibold">
+              Total Price:
+              <span class="font-normal text-gray-500">
+                <span>39.00</span> TK</span
+              >
+            </p>
+            <p id="discount" class="font-semibold">
+              Discount:
+              <span class="font-normal text-gray-500">
+                <span>9.00</span> TK</span
+              >
+            </p>
+            <p id="total" class="font-semibold">
+              Total:
+              <span class="font-normal text-gray-500">
+                <span>30.00</span> TK</span
+              >
+            </p>
           </div>
-          <button class="bg-pink-500 text-center w-full text-white text-xl p-2 rounded-md mb-4">Make Purchase</button>
+          <button
+            class="bg-pink-500 text-center w-full text-white text-xl p-2 rounded-md mb-4"
+          >
+            Make Purchase
+          </button>
         </div>
       </div>
     </section>
