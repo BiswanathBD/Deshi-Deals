@@ -146,7 +146,17 @@ productBox.addEventListener("click", function (e) {
 
 // Make Purchase features
 const PurchaseBtn = getById("purchase-btn");
+let totalPrice = getById("total-price").childNodes[1].childNodes[1].innerText;
 PurchaseBtn.addEventListener("click", function () {
+  if (Number(totalPrice) === 0) {
+    Swal.fire({
+      title: "Oops!",
+      text: "Your cart is empty. Add items before purchase.",
+      icon: "error",
+      confirmButtonText: "OK",
+    });
+    return;
+  }
   Swal.fire({
     title: "🎉 Order Placed!",
     text: "Your items are being prepared for shipment",
@@ -159,5 +169,5 @@ PurchaseBtn.addEventListener("click", function () {
     confirmButtonColor: "#16a34a", // green button
     confirmButtonText: "Awesome!",
   });
-  cartItemParent.innerHTML = ""
+  cartItemParent.innerHTML = "";
 });
