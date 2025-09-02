@@ -146,8 +146,9 @@ productBox.addEventListener("click", function (e) {
 
 // Make Purchase features
 const PurchaseBtn = getById("purchase-btn");
-let totalPrice = getById("total-price").childNodes[1].childNodes[1].innerText;
+
 PurchaseBtn.addEventListener("click", function () {
+  let totalPrice = getById("total-price").childNodes[1].childNodes[1].innerText;
   if (Number(totalPrice) === 0) {
     Swal.fire({
       title: "Oops!",
@@ -156,18 +157,19 @@ PurchaseBtn.addEventListener("click", function () {
       confirmButtonText: "OK",
     });
     return;
+  } else {
+    Swal.fire({
+      title: "🎉 Order Placed!",
+      text: "Your items are being prepared for shipment",
+      imageUrl: "https://cdn-icons-png.flaticon.com/512/679/679922.png",
+      imageWidth: 100,
+      imageHeight: 100,
+      imageAlt: "Shipment Icon",
+      background: "#f0f9ff",
+      color: "#0f172a",
+      confirmButtonColor: "#16a34a",
+      confirmButtonText: "Awesome!",
+    });
+    cartItemParent.innerHTML = "";
   }
-  Swal.fire({
-    title: "🎉 Order Placed!",
-    text: "Your items are being prepared for shipment",
-    imageUrl: "https://cdn-icons-png.flaticon.com/512/679/679922.png",
-    imageWidth: 100,
-    imageHeight: 100,
-    imageAlt: "Shipment Icon",
-    background: "#f0f9ff", // light blue background
-    color: "#0f172a", // dark text
-    confirmButtonColor: "#16a34a", // green button
-    confirmButtonText: "Awesome!",
-  });
-  cartItemParent.innerHTML = "";
 });
